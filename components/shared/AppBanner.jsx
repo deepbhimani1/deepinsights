@@ -66,7 +66,7 @@ function AppBanner() {
 			>
 				<div className="w-full max-w-[800px]">
 					<img
-						src={activeTheme === 'dark' ? '/images/hero.png' : '/images/hero.png'}
+						src={activeTheme === 'dark' ? '/images/Hero.png' : '/images/Hero.png'}
 						alt="Developer"
 						className="w-full h-auto object-contain"
 					/>
