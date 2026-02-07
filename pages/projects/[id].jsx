@@ -10,6 +10,9 @@ function ProjectSingle({ project }) {
 
 	const activeImage = images[activeIndex] || images[0];
 
+	// Safety: if somehow project is missing, avoid runtime crash
+	if (!project) return null;
+
 	return (
 		<div className="container mx-auto">
 			<PagesMetaHead title={project?.title || project?.ProjectHeader?.title} />
@@ -150,24 +153,35 @@ function ProjectSingle({ project }) {
 	);
 }
 
-export async function getServerSideProps({ params, query }) {
-	const idOrSlug = params?.id ?? query?.id;
+/**
+ * Build-time generation for Cloudflare Pages (static).
+ * IMPORTANT: this assumes your dynamic route param is a slug stored in `project.url`.
+ */
+export async function getStaticPaths() {
+	return {
+		paths: projectsData.map((p) => ({
+			params: { id: String(p?.url) },
+		})),
+		fallback: false,
+	};
+}
 
-	// Match slug first (your cards link uses `url`)
-	let project = projectsData.find((p) => p?.url === idOrSlug);
+export async function getStaticProps({ params }) {
+	const slug = params?.id;
 
-	// Fallback: numeric id support
+	let project = projectsData.find((p) => String(p?.url) === String(slug));
+
+	// Optional fallback: numeric id support if someone visits /projects/1 manually
 	if (!project) {
-		const asNumber = Number(idOrSlug);
+		const asNumber = Number(slug);
 		if (!Number.isNaN(asNumber)) {
 			project = projectsData.find((p) => Number(p?.id) === asNumber);
 		}
 	}
 
-	if (!project) {
-		return { notFound: true };
-	}
+	if (!project) return { notFound: true };
 
+	// Ensure props are serializable
 	const safeProject = JSON.parse(JSON.stringify(project));
 
 	return {
