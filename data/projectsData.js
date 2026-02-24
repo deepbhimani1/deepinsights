@@ -3,12 +3,12 @@ import { v4 as uuidv4 } from 'uuid';
 export const projectsData = [
 	{
 		id: 1,
-		title: 'League Player Ranking Report Generator',
-		url: 'player-ranking-report-generator',
+		title: 'League Player Ranking Report Pipeline',
+		url: 'player-ranking-report-pipeline',
 		category: 'Sports Analytics',
 		img: '/images/projects/baseball-ranking.png',
 		ProjectHeader: {
-			title: 'League Player Ranking Report Generator',
+			title: 'League Player Ranking Report Pipeline',
 			publishDate: 'January 2026',
 			tags: 'Python / Excel Automation / Scoring Models / Normalization / Reporting',
 		},
@@ -101,12 +101,12 @@ export const projectsData = [
 
 	{
 	id: 2,
-	title: 'Player Trend Analysis Report Generator',
+	title: 'Player Trend Analysis Report Pipeline',
 	url: 'player-trend-analysis-report',
 	category: 'Sports Analytics',
 	img: '/images/projects/player-trend-analysis.png',
 	ProjectHeader: {
-		title: 'Player Trend Analysis Report Generator (Multi-Season)',
+		title: 'Player Trend Analysis Report Pipeline (Multi-Season)',
 		publishDate: 'February 2026',
 		tags: 'Python / Longitudinal Analytics / Percentiles / Visualization / Excel & PDF Reporting',
 	},
@@ -193,12 +193,12 @@ export const projectsData = [
 
 	{
 	id: 3,
-	title: 'Player Performance Report Generator',
+	title: 'Player Performance Report Pipeline',
 	url: 'player-performance-report',
 	category: 'Sports Analytics',
 	img: '/images/projects/player-performance-report.png',
 	ProjectHeader: {
-		title: 'Individual Player Performance Report Generator',
+		title: 'Individual Player Performance Report Pipeline',
 		publishDate: 'February 2026',
 		tags: 'Python / KPI Design / Normalized Scoring / Excel + PDF Reporting / Visual Storytelling',
 	},
