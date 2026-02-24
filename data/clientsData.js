@@ -1,10 +1,11 @@
 import { v4 as uuidv4 } from 'uuid';
 
-// Import images
+// Import images (size: 300x160)
 import sfuimage from '../public/images/brands/sfu.webp';
 import ubcimage from '../public/images/brands/ubc.png';
 import bclcimage from '../public/images/brands/bclc2.png';
 import westvancouverschoolsimage from '../public/images/brands/wvs.png';
+import ipimage from '../public/images/brands/iplogo.png';
 
 export const clientsHeading = 'Organizations I Have Worked With';
 
@@ -28,5 +29,10 @@ export const clientsData = [
 		id: uuidv4(),
 		title: 'BCLC',
 		img: bclcimage,
+	},
+		{
+		id: uuidv4(),
+		title: 'IP',
+		img: ipimage,
 	},
 ];

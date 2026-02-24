@@ -3,22 +3,22 @@ import { v4 as uuidv4 } from 'uuid';
 export const aboutMeData = [
 	{
 		id: uuidv4(),
-		bio: `I am Deep Bhimani, a data analyst passionate about baseball and using data to help coaches make clearer, faster decisions.`,
+		bio: `I am Deep Bhimani, a data analyst and sports enthusiast focused on bringing clarity and structure to youth baseball performance data.`,
 	},
 	{
 		id: uuidv4(),
-		bio: `I currently work with SFU NCAA Softball Team and UBC Varsity, analyzing player performance data from tools like Blast and Rapsodo and turning it into clean, coach-ready reports. My focus is simple: take raw, messy data and convert it into rankings, trends, and insights that actually matter on the field.`,
+		bio: `Through work with programs such as SFU Softball and UBC Varsity, I’ve seen how powerful data can be when it’s translated properly, and how easily it becomes overwhelming when it isn’t.`,
 	},
 	{
 		id: uuidv4(),
-		bio: `Previously, I worked as a Data Analyst at BCLC, where I built automated reporting systems and dashboards used across multiple teams. That experience taught me how to design reports that are reliable, repeatable, and easy to interpret, the same principles I now apply to sports analytics.`,
+		bio: `Deep Insights helps organizations turn raw metrics into professional, meaningful analytics, including player report cards, draft rankings, benchmarking, development tracking, etc.`,
 	},
 	{
 		id: uuidv4(),
-		bio: `This website showcases the player ranking reports, performance dashboards, and custom analytics pipelines I build for leagues, teams, and coaches. Everything is designed to be clear, actionable, and tailored to your needs, whether that’s evaluations, comparisons, or season-long tracking.`,
+		bio: `My goal is simple: provide objective insight that supports fair evaluations, player growth, and healthy competition. Clear reporting helps players understand where they stand, gives families tangible feedback, and equips coaches with structured data to guide development.`,
 	},
 	{
 		id: uuidv4(),
-		bio: `If you want better insight from your data without extra work on your end, you’re in the right place.`,
+		bio: `Deep Insights is built on one principle: turn complexity into clarity, so organizations can focus on developing confident, competitive athletes.`,
 	},
 ];

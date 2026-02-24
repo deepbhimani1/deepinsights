@@ -4,7 +4,7 @@ import CounterItem from './CounterItem';
 function AboutCounter() {
 	useCountUp({ ref: 'experienceCounter', end: 2, duration: 2 });
 	useCountUp({ ref: 'githubStarsCounter', end: 150, duration: 2 });
-	useCountUp({ ref: 'feedbackCounter', end: 17, duration: 2 });
+	useCountUp({ ref: 'feedbackCounter', end: 175, duration: 2 });
 	useCountUp({ ref: 'projectsCounter', end: 370, duration: 2 });
 
 	return (
